@@ -1,0 +1,7 @@
+<form>
+    <input [(ngModel)]="current" type="text" name="name"/> 
+    <button (click)="onAddToDo()">Add To Do</button>
+    <ul>
+        <app-to-do-item *ngFor="let item of todos" [todo]="item"></app-to-do-item>
+    </ul>
+</form>
